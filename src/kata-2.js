@@ -1,7 +1,7 @@
 export function kata2(obj, def, path) {
 
   if (!path) {
-    return (param) => kata2(obj, def, param)
+    return (param) => kata2(obj, def, param);
   }
 
   let paths = path.split('.');
@@ -14,9 +14,9 @@ export function kata2(obj, def, path) {
     let temporal = obj[paths[i]];
 
     if (temporal) {
-      obj = temporal
+      obj = temporal;
     }
   }
 
-  return obj
+  return obj;
 }
